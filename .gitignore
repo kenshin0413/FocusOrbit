@@ -5,6 +5,10 @@
 ## User settings
 xcuserdata/
 
+## Local/generated files
+.DS_Store
+DerivedData/
+
 ## Obj-C/Swift specific
 *.hmap
 
