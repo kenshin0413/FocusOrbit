@@ -6,20 +6,93 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		94836C852FFA3F330023528A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 94836C842FFA3F330023528A /* FirebaseAnalytics */; };
+		9499A1013000000000000001 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 9499A1003000000000000001 /* GoogleMobileAds */; };
+		A10700012FE53771008E4BE5 /* FocusOrbitLiveActivity.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A11300012FE53771008E4BE5 /* FocusOrbitLiveActivity.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A10900012FE53771008E4BE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94F7DC792FE5376F008E4BE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A10200012FE53771008E4BE5;
+			remoteInfo = FocusOrbitLiveActivity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A10600012FE53771008E4BE5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A10700012FE53771008E4BE5 /* FocusOrbitLiveActivity.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		94F7DC812FE5376F008E4BE5 /* FocusOrbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusOrbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11300012FE53771008E4BE5 /* FocusOrbitLiveActivity.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FocusOrbitLiveActivity.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9499A1033000000000000001 /* Exceptions for "FocusOrbit" folder in "FocusOrbit" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 94F7DC802FE5376F008E4BE5 /* FocusOrbit */;
+		};
+		A11500012FE53771008E4BE5 /* Exceptions for "FocusOrbitLiveActivity" folder in "FocusOrbitLiveActivity" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A10200012FE53771008E4BE5 /* FocusOrbitLiveActivity */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		94F7DC832FE5376F008E4BE5 /* FocusOrbit */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9499A1033000000000000001 /* Exceptions for "FocusOrbit" folder in "FocusOrbit" target */,
+			);
 			path = FocusOrbit;
+			sourceTree = "<group>";
+		};
+		A10100012FE53771008E4BE5 /* FocusOrbitLiveActivity */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A11500012FE53771008E4BE5 /* Exceptions for "FocusOrbitLiveActivity" folder in "FocusOrbitLiveActivity" target */,
+			);
+			path = FocusOrbitLiveActivity;
+			sourceTree = "<group>";
+		};
+		A11400012FE53771008E4BE5 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		94F7DC7E2FE5376F008E4BE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94836C852FFA3F330023528A /* FirebaseAnalytics in Frameworks */,
+				9499A1013000000000000001 /* GoogleMobileAds in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10400012FE53771008E4BE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				94F7DC832FE5376F008E4BE5 /* FocusOrbit */,
+				A10100012FE53771008E4BE5 /* FocusOrbitLiveActivity */,
+				A11400012FE53771008E4BE5 /* Shared */,
 				94F7DC822FE5376F008E4BE5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				94F7DC812FE5376F008E4BE5 /* FocusOrbit.app */,
+				A11300012FE53771008E4BE5 /* FocusOrbitLiveActivity.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,20 +131,48 @@
 				94F7DC7D2FE5376F008E4BE5 /* Sources */,
 				94F7DC7E2FE5376F008E4BE5 /* Frameworks */,
 				94F7DC7F2FE5376F008E4BE5 /* Resources */,
+				A10600012FE53771008E4BE5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A10800012FE53771008E4BE5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				94F7DC832FE5376F008E4BE5 /* FocusOrbit */,
+				A11400012FE53771008E4BE5 /* Shared */,
+			);
+			name = FocusOrbit;
+			packageProductDependencies = (
+				94836C842FFA3F330023528A /* FirebaseAnalytics */,
+				9499A1003000000000000001 /* GoogleMobileAds */,
+			);
+			productName = FocusOrbit;
+			productReference = 94F7DC812FE5376F008E4BE5 /* FocusOrbit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A10200012FE53771008E4BE5 /* FocusOrbitLiveActivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A11200012FE53771008E4BE5 /* Build configuration list for PBXNativeTarget "FocusOrbitLiveActivity" */;
+			buildPhases = (
+				A10300012FE53771008E4BE5 /* Sources */,
+				A10400012FE53771008E4BE5 /* Frameworks */,
+				A10500012FE53771008E4BE5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				94F7DC832FE5376F008E4BE5 /* FocusOrbit */,
+				A10100012FE53771008E4BE5 /* FocusOrbitLiveActivity */,
+				A11400012FE53771008E4BE5 /* Shared */,
 			);
-			name = FocusOrbit;
+			name = FocusOrbitLiveActivity;
 			packageProductDependencies = (
 			);
-			productName = FocusOrbit;
-			productReference = 94F7DC812FE5376F008E4BE5 /* FocusOrbit.app */;
-			productType = "com.apple.product-type.application";
+			productName = FocusOrbitLiveActivity;
+			productReference = A11300012FE53771008E4BE5 /* FocusOrbitLiveActivity.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +187,9 @@
 					94F7DC802FE5376F008E4BE5 = {
 						CreatedOnToolsVersion = 26.5;
 					};
+					A10200012FE53771008E4BE5 = {
+						CreatedOnToolsVersion = 26.5;
+					};
 				};
 			};
 			buildConfigurationList = 94F7DC7C2FE5376F008E4BE5 /* Build configuration list for PBXProject "FocusOrbit" */;
@@ -94,18 +201,30 @@
 			);
 			mainGroup = 94F7DC782FE5376F008E4BE5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				94836C832FFA3F330023528A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9499A1023000000000000001 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 94F7DC822FE5376F008E4BE5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				94F7DC802FE5376F008E4BE5 /* FocusOrbit */,
+				A10200012FE53771008E4BE5 /* FocusOrbitLiveActivity */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		94F7DC7F2FE5376F008E4BE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10500012FE53771008E4BE5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +241,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A10300012FE53771008E4BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A10800012FE53771008E4BE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A10200012FE53771008E4BE5 /* FocusOrbitLiveActivity */;
+			targetProxy = A10900012FE53771008E4BE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		94F7DC8A2FE53771008E4BE5 /* Debug */ = {
@@ -177,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -234,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -250,28 +384,29 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = WJNB26R5VS;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FocusOrbit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kenshin.FocusOrbit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -281,28 +416,89 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = WJNB26R5VS;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FocusOrbit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kenshin.FocusOrbit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A11000012FE53771008E4BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = WJNB26R5VS;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FocusOrbitLiveActivity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kenshin.FocusOrbit.LiveActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A11100012FE53771008E4BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = WJNB26R5VS;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FocusOrbitLiveActivity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kenshin.FocusOrbit.LiveActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -327,7 +523,48 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A11200012FE53771008E4BE5 /* Build configuration list for PBXNativeTarget "FocusOrbitLiveActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A11000012FE53771008E4BE5 /* Debug */,
+				A11100012FE53771008E4BE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		94836C832FFA3F330023528A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.15.0;
+			};
+		};
+		9499A1023000000000000001 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		94836C842FFA3F330023528A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 94836C832FFA3F330023528A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		9499A1003000000000000001 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9499A1023000000000000001 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 94F7DC792FE5376F008E4BE5 /* Project object */;
 }
